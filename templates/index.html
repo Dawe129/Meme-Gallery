@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Meme gallery</title>
+
+<link rel="stylesheet" href="/static/mystyle.css">
+
+
+</head>
+<body>
+<h1>Memečka gallerie</h1>
+
+<div class="grid" id="grid">
+{% for meme in memes %}
+    <div class="card" data-tag="{{ meme.tag }}">
+        <img src="{{ meme.path}}">
+        <p>{{ meme.title }}</p>
+    </div>
+{% endfor %}
+
+</div>
+</body>
+</html>

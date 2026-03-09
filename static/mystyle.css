@@ -1,0 +1,17 @@
+body {
+    font-family: Arial;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.card img {
+    width: 100%;
+}
